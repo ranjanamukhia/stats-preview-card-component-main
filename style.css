@@ -1,9 +1,13 @@
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 
 
 
-
-:root{
+body{
     /* (main background */
     --Very-dark-blue: hsl(233, 47%, 7%);
     /* (card background) */
@@ -16,132 +20,54 @@
  --Slightly-transparent-white : hsla(0, 0%, 100%, 0.75);
     /* (stat headings) */
 --Slightly-transparent-white-2 : hsla(0, 0%, 100%, 0.6);
-}
-html{
-    font-size: 62.5%;
-}
-
-body{
     font-family: 'Inter', sans-serif;
+    font-size: 15px;
 }
 
-
-
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 main{
+    max-width:375px;
     min-height: 100vh;
     background-color:var(--Very-dark-blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   margin: 0 auto;
+   padding: 1rem 1rem;
 }
 
 .container{
-    min-width: 90vw;
-    min-height: auto;
+    max-width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-.first-half{
-    max-width: 540px;
-    min-height: 447px;
-    background-color: var(--Dark-desaturated-blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
-}
-
-div.second-half {
-    background: url(images/image-header-desktop.jpg);
-    width: 540px;
-    height:447px;
-  }
-  
-  div.overlay {
+    background-color:var(--Dark-desaturated-blue)
    
-    background-color:var(--Soft-violet);
-    opacity: 0.6;
-    width: 540px;
-    height:447px;
-  }
-  
-  
-.main-heading{
-    max-width: 60%;
+}
+.text-container{
     color: var(--White);
-    font-weight: 700;
-    font-family:'Inter';
-    font-size: 3rem;
-    padding-top: 2rem;
-  
-
-}
-.first-para{
-    max-width: 60%;
-    color: var(--Slightly-transparent-white);
-    font-size: 1rem;
-    font-weight:400 ;
-    font-size: 1.5rem;
-    padding-top: 4.5rem;
-}
-
-.information{
-    min-width: 60%;
-   display: flex;
-  justify-content: flex-start;
-  color: var(--White);
-  padding-top: 6rem;
-}
-
-.first-info h1{
-    padding-bottom: 0.6rem;
-    padding-right: 8rem;
-}
-
-.first-info p{
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-.second-info h1{
-    padding-bottom: 0.6rem;
-    padding-right: 8rem;
-}
-
-.second-info p{
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-.third-info h1{
-    padding-bottom: 0.6rem;
-   
-}
-.third-info p{
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-
-
-
-
+    padding: 1.5rem 1.5rem;
+    max-width: 90%;
+    margin: 0 auto;
     
+}
+h1{
+    font-size: 1.5rem;
+}
 
+.hero-image-mobile img{
+   max-width: 100%;
+ 
+}
 
+.first-para{
+    font-size: 0.8rem;
+    opacity: 70%;
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-justify:inter-word;
 
+}
+
+.hero-image-desktop{
+    display: none;
+}
 
 
 
