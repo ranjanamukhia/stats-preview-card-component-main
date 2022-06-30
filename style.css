@@ -76,9 +76,21 @@ h1{
 .companies-info{
     margin-top: 2rem;
 }
+.companies-info p{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    opacity: 70%;
+    margin-top: 0.5rem;
+}
 
 .templates-info{
     margin-top: 1rem;
+}
+.templates-info p{
+    text-transform: uppercase;  
+    font-size: 0.7rem;
+    opacity: 70%;
+    margin-top: 0.5rem;
 }
 
 .queries-info{
@@ -86,52 +98,128 @@ h1{
     margin-bottom: 2rem;
 }
 
+.queries-info p{
+    text-transform: uppercase;  
+    font-size: 0.7rem;
+    opacity: 70%;
+    margin-top: 0.5rem;
+}
+
 .hero-image-desktop{
     display: none;
 }
 
 
-@media(min-width:820px)
-{
+@media only screen and (min-width: 1122px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    body{
+        /* (main background */
+        --Very-dark-blue: hsl(233, 47%, 7%);
+        /* (card background) */
+        --Dark-desaturated-blue : hsl(244, 38%, 16%);
+        /* (accent) */
+        --Soft-violet: hsl(277, 64%, 61%);
+        /* (main heading, stats) */
+        --White : hsl(0, 0%, 100%);
+        /* (main paragraph) */
+     --Slightly-transparent-white : hsla(0, 0%, 100%, 0.75);
+        /* (stat headings) */
+    --Slightly-transparent-white-2 : hsla(0, 0%, 100%, 0.6);
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+    }
 
     main{
+       
         max-width:1440px;
-        min-height: 100vh;
         background-color:var(--Very-dark-blue);
-        margin: 0 auto;
-        padding: 2rem 3rem;
+        
+       
+       
     }
 
     .container{
+      
         max-width: 80%;
         background-color:var(--Dark-desaturated-blue);
-        border-radius: 0 0 10px 10px;
-        border: 2px solid white;
+        border-radius: 10px 0 0 10px;
+        margin:4rem auto;
+        
         display: flex;
         
         justify-content: center;
         align-items: center;
+      
+    
+       
+      
        
     }
 
     .text-container{
-        max-width: 50%;
+        max-width: 30%;
         color: var(--White);
         padding: 1.5rem 1.5rem;
-       
+        display: flex;
         margin: 0 auto;
+        padding: 0 auto;
+       
        
         
     }
+    /* .hero-image-desktop{
+        background-color: var(--Soft-violet);
+        border-radius: 0 20px 20px 0;
+
+    } */
     .hero-image-desktop{
+        background-color:var(--Soft-violet);
+        border-radius: 0 20px 20px 0;
         max-width: 100%;
-        height: auto;
-        display: inline-block;
+    display: block;
+    opacity: 0.35;
+    mix-blend-mode:luminosity;
+      
+       
+       
     }
 
     .hero-image-mobile{
         display: none;
 
+    }
+    .information{
+        max-width: 100%;
+       display: flex;
+      
+       margin-top: 2rem;
+       
+    }
+
+    .companies-info{
+        margin-top: 0rem;
+        margin-right: 2rem;
+      
+    }
+    
+    .templates-info{
+        margin-top: 0rem;
+        margin-right: 2rem;
+       
+       
+    }
+    
+    .queries-info{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        /* margin-right: 2rem; */
+      
+      
     }
 
 
